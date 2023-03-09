@@ -24,20 +24,16 @@ class script(object):
 - /stickerid - 𝖦𝖾𝗍 𝖨𝖣
 """
     ABOUT_TXT = """
-○ 𝖬𝗒 𝖭𝖺𝗆e : Tᴏᴠɪɴᴏ
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/aboutme_DK'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
+○ 𝖬𝗒 𝖭𝖺𝗆e : Miss Ava Bot
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/thehtmluser'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
-○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
+○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Heroku
 ○ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : <a href='https://www.mongodb.com'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡 𝖥𝗋𝖾𝖾 𝖳𝗂𝖾𝗋</a>
 ○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : 𝖵9.8 [BeTa]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝖳𝗈𝗏𝗂𝗇𝗈 𝖨𝗌 𝖺 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍 𝖻𝗒 𝖳𝖾𝖺𝗆 @DK_BOTx  
-
-CODES:
-
-» https://github.com/DKBOTx/TovinoBotV3
+- Not Available Right Now. Release When The Bot Gets 500k Users.😝
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
 Simple Telegram Text-To-Speech Module.
@@ -211,16 +207,16 @@ Google's TTS engine by way of the gTTS library
     INFO_TXT ="""<b>𝖨𝗇𝖿𝗈</b>
 𝖦𝖾𝗍 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀!
 <b>𝖴𝗌𝖺𝗀𝖾:</b>
-➥ /id - 𝗀𝖾𝗍 𝗍𝗁𝖾 𝗂𝖽 𝗈𝖿 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝖾𝖽 𝗎𝗌𝖾𝗋
-➥ /info - 𝗀𝖾𝗍 𝗍𝗁𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝖺 𝗎𝗌𝖾𝗋
-➥ /short - 𝗌𝗁𝗈𝗋𝗍 𝗅𝗂𝗇𝗄𝗌 
-➥ /tts - 𝗍𝖾𝗑𝗍 𝗍𝗈 𝗌𝗉𝖾𝖾𝖼𝗁
-➥ /lyrics - 𝗅𝗒𝗋𝗂𝖼𝗌 𝗈𝖿 𝗌𝗈𝗇𝗀
+- /id - 𝗀𝖾𝗍 𝗍𝗁𝖾 𝗂𝖽 𝗈𝖿 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝖾𝖽 𝗎𝗌𝖾𝗋
+- /info - 𝗀𝖾𝗍 𝗍𝗁𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝖺 𝗎𝗌𝖾𝗋
+- /short - 𝗌𝗁𝗈𝗋𝗍 𝗅𝗂𝗇𝗄𝗌 
+- /tts - 𝗍𝖾𝗑𝗍 𝗍𝗈 𝗌𝗉𝖾𝖾𝖼𝗁
+- /lyrics - 𝗅𝗒𝗋𝗂𝖼𝗌 𝗈𝖿 𝗌𝗈𝗇𝗀
 """
     EXTRAMOD_TXT = """<b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of 𝖳𝗈𝗏𝗂𝗇𝗈
+these are the extra features of Miss Ava Bot
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
@@ -229,7 +225,7 @@ these are the extra features of 𝖳𝗈𝗏𝗂𝗇𝗈
 • /search  - <code>get the film information from various sources.</code>
 """
     ADMIN_TXT = """
-<b>🤖Bot Commands and Usage</b>
+<b>🤖 Bot Commands and Usage</b>
 
 • /filter 𝗈𝗋 /add <code>𝖺𝖽𝖽 𝖺 𝖿𝗂𝗅𝗍𝖾𝗋</code>
 • /filters 𝗈𝗋 /viewfilters <code>𝗅𝗂𝗌𝗍 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗈𝖿 𝖺 𝖼𝗁𝖺𝗍</code>
