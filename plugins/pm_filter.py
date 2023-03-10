@@ -2,6 +2,7 @@
 import asyncio
 import re
 import ast
+import random
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
@@ -515,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.reply_photo(
-                photo=START_IMAGE_URL,
+                photo=random.choice(PICS),
                 caption=script.START_TXT.format(
                     query.from_user.mention , 
                     temp.U_NAME, 
@@ -572,7 +573,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
         await query.message.reply_photo(
-            photo="https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg",
+            photo=random.choice(PICS),
             caption=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
