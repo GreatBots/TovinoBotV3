@@ -15,7 +15,7 @@ OWLY_API = os.environ.get("OWLY_API", None)
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text='⚙ ᴅᴋ ʙᴏᴛx ⚙', url='https://t.me/dk_botx')
+            InlineKeyboardButton(text='⚙ ᴅᴋ ʙᴏᴛx ⚙', url='https://t.me/myownbots')
         ]
     ]
 )
@@ -24,7 +24,7 @@ BUTTONS = InlineKeyboardMarkup(
 @Client.on_message(filters.private & filters.regex(r'https?://[^\s]+'))
 async def reply_shortens(bot, update):
     message = await update.reply_text(
-        text="```Analysing your link...```",
+        text="`Analysing your link...`",
         disable_web_page_preview=True,
         quote=True
     )
