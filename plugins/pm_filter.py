@@ -550,8 +550,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
           )
     elif query.data == "about":
         await query.message.delete()
-        await query.message.reply_photo(
-            'https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg',
+        await query.message.reply_sticker(
+            'CAACAgQAAxkBAAECr4hiKhTf1qJEeLctIJCsrxk2k5BPmQADEgAC4oetNCxmTn2LSYe8HgQ',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -572,6 +572,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
         await query.message.reply(
+            photo="https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg",
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html',
