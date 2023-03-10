@@ -46,6 +46,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value": "-1001952454351",
             "required": true
         },
         "AUTH_USERS": {
@@ -54,6 +55,7 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value" "-1001857790096"
             "required": true
         },
         "DATABASE_URI": {
@@ -81,12 +83,12 @@
         },
         "UNAUTHORIZED_CALLBACK_TEXT":{
             "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
-            "value": "𝙏𝙃𝙄𝙎 𝙄𝙎 𝙉𝙊𝙏 𝙂𝙐𝘿 𝘿𝙐𝘿𝙀",
+            "value": "This is not for you",
             "required": false
         },
         "REDIRECT_TO":{
             "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect). AUTH CHANNEL and REDIRECT Channel must be same",
-            "value": "oKda",
+            "value": "myownbots",
             "required": false
         }
     },
