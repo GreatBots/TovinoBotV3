@@ -571,9 +571,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
-        await query.message.reply(
+        await query.message.reply_photo(
             photo="https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg",
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            caption=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html',
             disable_web_page_preview=True
