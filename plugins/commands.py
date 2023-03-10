@@ -20,37 +20,19 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-@Client.on_message(filters.command("help") & filters.incoming & ~filters.edited)
-async def start(client, message: pyrogram.types.Message):
-
-    if message.chat.type in ['group', 'supergroup', 'private']:
-        buttons = [[
-        InlineKeyboardButton('Commands', callback_data='help')
-    ]]
-       
-        reply_markup = InlineKeyboardMarkup(buttons)
-            await message.reply(
-                text="Click Here For List Of Commands 👇".format(
-                    (message.from_user.mention if 
-                    message.from_user else 
-                    message.chat.title), 
-                    temp.U_NAME, 
-                    temp.B_NAME,
-                ),
-                reply_markup=reply_markup
-            )
-        else:
-            await message.reply(
-                text="Click Here For List Of Commands 👇".format(
-                    (message.from_user.mention if 
-                    message.from_user else 
-                    message.chat.title), 
-                    temp.U_NAME, 
-                    temp.B_NAME,
-                ),
-                reply_markup=reply_markup
-            )
-        await asyncio.sleep(2)
+@Client.on_message(filters.command("help"))
+def help_command_handler(client, message):
+    # Create a reply message
+    reply = "Click Here For Get The List Of Available Commands👇"
+    
+    # Create a "Click Here" button with the specified URL
+    buttonXyz = InlineKeyboardButton("Commands", callback_data="help")
+    
+    # Create an InlineKeyboardMarkup with the button
+    markup = InlineKeyboardMarkup([[buttonXyz]])
+    
+    # Send the reply message with the InlineKeyboardMarkup
+    message.reply_text(reply, reply_markup=markup)
 
 
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
