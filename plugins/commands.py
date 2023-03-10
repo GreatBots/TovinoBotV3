@@ -20,6 +20,38 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+@Client.on_message(filters.command("help") & filters.incoming & ~filters.edited)
+async def start(client, message: pyrogram.types.Message):
+
+    if message.chat.type in ['group', 'supergroup', 'private']:
+        buttons = [[
+        InlineKeyboardButton('Commands', callback_data='help')
+    ]]
+       
+        reply_markup = InlineKeyboardMarkup(buttons)
+            await message.reply(
+                text="Click Here For List Of Commands 👇".format(
+                    (message.from_user.mention if 
+                    message.from_user else 
+                    message.chat.title), 
+                    temp.U_NAME, 
+                    temp.B_NAME,
+                ),
+                reply_markup=reply_markup
+            )
+        else:
+            await message.reply(
+                text="Click Here For List Of Commands 👇".format(
+                    (message.from_user.mention if 
+                    message.from_user else 
+                    message.chat.title), 
+                    temp.U_NAME, 
+                    temp.B_NAME,
+                ),
+                reply_markup=reply_markup
+            )
+        await asyncio.sleep(2)
+
 
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message: pyrogram.types.Message):
@@ -46,7 +78,7 @@ async def start(client, message: pyrogram.types.Message):
             )
         else:
             await message.reply_photo(
-                photo=START_IMAGE_URL,
+                photo=random.choice(PICS),
                 caption=script.START_TXT.format(
                     (message.from_user.mention if 
                     message.from_user else 
@@ -81,7 +113,7 @@ async def start(client, message: pyrogram.types.Message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_photo(
-            photo=START_IMAGE_URL if START_IMAGE_URL else random.choice(PICS),
+            photo=random.choice(PICS),
             caption=script.START_TXT.format(
                 (message.from_user.mention if 
                 message.from_user else 
@@ -130,7 +162,7 @@ async def start(client, message: pyrogram.types.Message):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=START_IMAGE_URL if START_IMAGE_URL else random.choice(PICS),
+            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
