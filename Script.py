@@ -6,11 +6,11 @@ class script(object):
 """
     HELP_TXT = """<b>𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:</b>
     
-/start - Start the Bot.
-/help - Get Help Message.
-/about - Get About Message.
+/𝗌𝗍𝖺𝗋𝗍 - 𝖲𝗍𝖺𝗋𝗍 𝗍𝗁𝖾 𝖡𝗈𝗍.
+/𝗁𝖾𝗅𝗉 - 𝖦𝖾𝗍 𝖧𝖾𝗅𝗉 𝖬𝖾𝗌𝗌𝖺𝗀𝖾.
+/𝖺𝖻𝗈𝗎𝗍 - 𝖦𝖾𝗍 𝖠𝖻𝗈𝗎𝗍 𝖬𝖾𝗌𝗌𝖺𝗀𝖾.
 
-For more features 👇
+<b>𝖥𝗈𝗋 𝗆𝗈𝗋𝖾 𝖿𝖾𝖺𝗍𝗎𝗋𝖾𝗌 👇</b>
 """
     GTRANS_TXT = """<b>𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝗈𝗋</b>
 - 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾 𝗍𝖾𝗑𝗍𝗌 𝗍𝗈 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾!
@@ -30,16 +30,16 @@ For more features 👇
 - /stickerid - 𝖦𝖾𝗍 𝖨𝖣
 """
     ABOUT_TXT = """
-<b>○ 𝖬𝗒 𝖭𝖺𝗆e :</b> Miss Ava Bot
+<b>○ 𝖬𝗒 𝖭𝖺𝗆e :</b> 𝖬𝗂𝗌𝗌 𝖠𝗏𝖺 𝖡𝗈𝗍
 <b>○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 :</b> <a href='https://t.me/thehtmluser'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 <b>○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 :</b> 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 <b>○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 :</b> 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
-<b>○ 𝖲𝖾𝗋𝗏𝖾𝗋 :</b> Heroku
+<b>○ 𝖲𝖾𝗋𝗏𝖾𝗋 :</b> 𝖧𝖾𝗋𝗈𝗄𝗎
 <b>○ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 :</b> <a href='https://www.mongodb.com'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡 𝖥𝗋𝖾𝖾 𝖳𝗂𝖾𝗋</a>
 <b>○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 :</b> 𝖵1.0
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- Not Available Right Now. Release When The Bot Gets 500k Users.😝
+- 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖱𝗂𝗀𝗁𝗍 𝖭𝗈𝗐. 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 𝖶𝗁𝖾𝗇 𝖳𝗁𝖾 𝖡𝗈𝗍 𝖦𝖾𝗍𝗌 500𝗄 𝖴𝗌𝖾𝗋𝗌😝
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
 Simple Telegram Text-To-Speech Module.
