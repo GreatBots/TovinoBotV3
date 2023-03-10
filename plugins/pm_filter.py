@@ -572,7 +572,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
         await query.message.reply_photo(
-            photo=random.choice(PICS),
+            photo="https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg",
             caption=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html',
