@@ -21,23 +21,6 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 
 
-@Client.on_message(filters.command("help"))
-async def helpcommand(client, message: pyrogram.types.Message):
-    await message.reply_photo(
-                photo=random.choice(PICS),
-                caption="👇 Click Here For List Of Commands".format(
-                    (message.from_user.mention if 
-                    message.from_user else 
-                    message.chat.title), 
-                    temp.U_NAME, 
-                    temp.B_NAME,
-                ),
-                reply_markup=InlineKeyboardMarkup([[
-                    [InlineKeyboardButton(text="Commands", callback_data="help")]
-                    ]]
-            )
-
-
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message: pyrogram.types.Message):
 
