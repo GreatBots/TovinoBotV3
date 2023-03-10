@@ -78,7 +78,7 @@
         },
         "START_IMAGE_URL":{
             "description": "Start image URL. Defaults to https://telegra.ph/TovinoBotV3-05-23",
-            "value": "https://telegra.ph/TovinoBotV3-05-23",
+            "value": "https://te.legra.ph/file/43827fb4ee057db80a619.jpg",
             "required": false
         },
         "UNAUTHORIZED_CALLBACK_TEXT":{
