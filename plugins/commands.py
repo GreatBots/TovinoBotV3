@@ -22,7 +22,7 @@ BATCH_FILES = {}
 
 
 @Client.on_message(filters.command("help"))
-async def helpcommand(client, message: pyrogram.types.Messages):
+async def helpcommand(client, message: pyrogram.types.Message):
     await message.reply_photo(
                 photo=random.choice(PICS),
                 caption="👇 Click Here For List Of Commands".format(
