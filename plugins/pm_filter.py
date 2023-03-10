@@ -567,13 +567,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about_menu":
         buttons = [[
         InlineKeyboardButton('Channel', url='https://t.me/MyownBots'),
-        InlineKeyboardButton('Support', url='https://t.me/devschats'),
-        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+        InlineKeyboardButton('Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
-        await query.message.reply(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+        await query.message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html',
             disable_web_page_preview=True
