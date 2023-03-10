@@ -33,6 +33,20 @@ def help_command_handler(client, message):
     
     # Send the reply message with the InlineKeyboardMarkup
     message.reply_text(reply, reply_markup=markup)
+    
+@Client.on_message(filters.command("about"))
+def about_command_handler(client, message):
+    # Create a reply message
+    reply = script.ABOUT_TXT
+    
+    # Create a "Click Here" button with the specified URL
+    button123 = InlineKeyboardButton("Home", callback_data="Home")
+    
+    # Create an InlineKeyboardMarkup with the button
+    markup = InlineKeyboardMarkup([[button123]])
+    
+    # Send the reply message with the InlineKeyboardMarkup
+    message.reply_text(reply, reply_markup=markup)
 
 
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
