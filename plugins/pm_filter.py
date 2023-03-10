@@ -500,7 +500,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('➕ Add me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
      [
         InlineKeyboardButton('About', callback_data='about_menu'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Help', callback_data='help')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
