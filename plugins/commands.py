@@ -28,7 +28,7 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
         InlineKeyboardButton('About', callback_data='about_menu'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Help', callback_data='help')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -74,7 +74,7 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
         InlineKeyboardButton('About', callback_data='about_menu'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Help', callback_data='help')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -124,7 +124,7 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
       [
         InlineKeyboardButton('About', callback_data='about_menu'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Help', callback_data='help')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
