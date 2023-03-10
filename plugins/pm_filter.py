@@ -550,8 +550,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
           )
     elif query.data == "about":
         await query.message.delete()
-        await query.message.reply_sticker(
-            'CAACAgQAAxkBAAECr4hiKhTf1qJEeLctIJCsrxk2k5BPmQADEgAC4oetNCxmTn2LSYe8HgQ',
+        await query.message.reply_photo(
+            'https://te.legra.ph/file/a188076b99ece12c2aa1a.jpg',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -567,8 +567,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about_menu":
         buttons = [[
         InlineKeyboardButton('Channel', url='https://t.me/MyownBots'),
-        InlineKeyboardButton('Support', url='https://t.me/devschats'),
-        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+        InlineKeyboardButton('Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
